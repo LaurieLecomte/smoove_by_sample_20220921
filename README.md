@@ -1,0 +1,1 @@
+# WARNING : the 02_infos/excl_chrs.txt file mush be encoded in linux format, otherwise grep won't grep, AND have a newline at the end
