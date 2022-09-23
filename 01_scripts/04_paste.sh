@@ -19,3 +19,6 @@ REGIONS_EX="02_infos/excl_chrs.txt"
 
 #1. Paste all the single sample VCFs with the same number of variants to get a single, squared, joint-called file.
 smoove paste --outdir $MERGED_DIR --name merged $CALLS_DIR/geno/*.vcf.gz
+
+# 2. Clean up files from previous steps
+#for file in $(ls -1 $CALLS_DIR/raw/*.bam); do rm $file; done

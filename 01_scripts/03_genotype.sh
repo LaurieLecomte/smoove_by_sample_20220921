@@ -4,7 +4,7 @@
 
 # IF SOME CHROMOSOMES NEED TO BE EXCLUDED : add these chrs to excl_chrs.txt and run 00_prepare_regions.sh beforehand, and uncomment line 33 
 
-# parallel -a 02_infos/ind_ALL.txt -k -j 10 srun -c 1 --mem=20G -p small -J 01_call_{} -log/01_call_{}_%j.log /bin/sh 01_scripts/01_call.sh {} &
+# parallel -a 02_infos/ind_ALL.txt -k -j 10 srun -c 1 --mem=20G -p small -J 03_genotype_{} -o log/03_genotype_{}_%j.log /bin/sh 01_scripts/03_genotype.sh {} &
 
 # VARIABLES
 GENOME="03_genome/genome.fasta"

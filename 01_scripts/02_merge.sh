@@ -24,4 +24,4 @@ fi
 
 # 1. Get the union of sites across all samples (this can parallelize this across as many CPUs or machines as needed):
 # smoove merge --name merged -f $reference_fasta --outdir ./ results-smoove/*.genotyped.vcf.gz 
-smoove merge --name merged -f $GENOME --outdir $CALLS_DIR/merged $CALLS_DIR/raw/*.vcf.gz
+smoove merge --name merged -f $GENOME --outdir $CALLS_DIR/merged $CALLS_DIR/raw/*raw.vcf.gz
