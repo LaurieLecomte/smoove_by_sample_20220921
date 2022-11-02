@@ -24,3 +24,6 @@ As recommended in [smoove's user manual](https://github.com/brentp/smoove/#popul
 * Optional : a list of samples IDs and their population (and/or sex) for popgen analysis, such as PCA or FST calculation, in `02_infos`. **WARNING** : the 02_infos/excl_chrs.txt file mush be encoded in linux format, otherwise grep won't grep, AND have a newline at the end
 
 
+### Conda environment
+Create a new conda env named `smoove_2022` using `conda create --name smoove_2022 --file smoove_env.txt` (from the main directory) and load this env prior to running the pipeline : `conda activate smoove_2022`
+
